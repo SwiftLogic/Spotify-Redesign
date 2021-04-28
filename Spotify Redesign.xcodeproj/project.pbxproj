@@ -11,6 +11,8 @@
 		E9FA98C926389A0B004A5B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA98C826389A0B004A5B5A /* ContentView.swift */; };
 		E9FA98CB26389A0E004A5B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FA98CA26389A0E004A5B5A /* Assets.xcassets */; };
 		E9FA98CE26389A0E004A5B5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FA98CD26389A0E004A5B5A /* Preview Assets.xcassets */; };
+		E9FA98D92638A1A2004A5B5A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA98D82638A1A2004A5B5A /* Song.swift */; };
+		E9FA98DD2638A440004A5B5A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA98DC2638A440004A5B5A /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E9FA98CA26389A0E004A5B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9FA98CD26389A0E004A5B5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9FA98CF26389A0E004A5B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FA98D82638A1A2004A5B5A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E9FA98DC2638A440004A5B5A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		E9FA98C526389A0B004A5B5A /* Spotify Redesign */ = {
 			isa = PBXGroup;
 			children = (
+				E9FA98D72638A194004A5B5A /* Model */,
+				E9FA98D62638A18A004A5B5A /* View */,
 				E9FA98C626389A0B004A5B5A /* Spotify_RedesignApp.swift */,
 				E9FA98C826389A0B004A5B5A /* ContentView.swift */,
 				E9FA98CA26389A0E004A5B5A /* Assets.xcassets */,
@@ -67,6 +73,22 @@
 				E9FA98CD26389A0E004A5B5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9FA98D62638A18A004A5B5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA98DC2638A440004A5B5A /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9FA98D72638A194004A5B5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA98D82638A1A2004A5B5A /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FA98D92638A1A2004A5B5A /* Song.swift in Sources */,
 				E9FA98C926389A0B004A5B5A /* ContentView.swift in Sources */,
+				E9FA98DD2638A440004A5B5A /* Home.swift in Sources */,
 				E9FA98C726389A0B004A5B5A /* Spotify_RedesignApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
