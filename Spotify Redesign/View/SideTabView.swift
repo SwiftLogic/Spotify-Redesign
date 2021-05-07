@@ -38,7 +38,7 @@ struct SideTabView: View {
             // setting the tabs for half of the height so that remaining element will get space....
             .frame(height: getRect().height / 2.3)
             .padding(.top)
-            Spacer(minLength: 25) //50
+            Spacer(minLength: getRect().height < 750 ?  30 : 50) //25 by me
             
             Button(action: {
                 // checking and increasing volume...
@@ -68,7 +68,7 @@ struct SideTabView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 
             }
-            .padding(.vertical, 20)
+            .padding(.vertical, getRect().height < 750 ? 15 : 20)
             
             
             Button(action: {
@@ -96,7 +96,7 @@ struct SideTabView: View {
                     .shadow(radius: 5)
             })
             
-            .padding(.top, 30)
+            .padding(.top, getRect().height < 750 ? 10 : 30)
             .padding(.bottom, getSafeArea().bottom == 0 ? 15 : 0)
             .offset(x: showSlideBar ? 0 : 100)
         }

@@ -59,52 +59,58 @@ struct Home: View {
                     // Carousel List....
                     TabView {
                         ForEach(recentlyPlayed) {item in
-                            ZStack(alignment: .bottomLeading) {
-                                Image(item.album_cover)
-                                    .resizable()
-                                    //if youre using .fill, you must specify the width...
-                                    .aspectRatio(contentMode: .fit)
-                                    .cornerRadius(20)
-                                // dark shading at bottom so that data will be visible...
-                                    .overlay(
-                                        
-                                        LinearGradient(gradient: .init(colors: [Color.clear, Color.clear, .black]), startPoint: .top, endPoint: .bottom)
-                                            .cornerRadius(20)
-                                    )
+                            
+                            GeometryReader { proxy in
                                 
-                                HStack(spacing: 15) {
-                                    Button(action: {}, label: {
-                                        //  Play button....
-                                        Image(systemName: "play.fill")
-                                            .font(.title)
-                                            .foregroundColor(.white)
-                                            .padding(20)
-                                            .background(Color("logoColor"))
-                                            .clipShape(Circle())
-                                    })
+                                ZStack(alignment: .bottomLeading) {
                                     
-                                    VStack(alignment: .leading, spacing: 5, content: {
-                                        Text(item.album_name)
-                                            .font(.title2)
-                                            .fontWeight(.heavy)
-                                            .foregroundColor(.white)
+                                    Image(item.album_cover)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: proxy.frame(in: .global).width)
+                                        .cornerRadius(20)
+                                        // dark shading at bottom so that data will be visible...
+                                        .overlay(
+                                            
+                                            LinearGradient(gradient: .init(colors: [Color.clear, Color.clear, .black]), startPoint: .top, endPoint: .bottom)
+                                                .cornerRadius(20)
+                                        )
+                                    
+                                    HStack(spacing: 15) {
+                                        Button(action: {}, label: {
+                                            //  Play button....
+                                            Image(systemName: "play.fill")
+                                                .font(.title)
+                                                .foregroundColor(.white)
+                                                .padding(20)
+                                                .background(Color("logoColor"))
+                                                .clipShape(Circle())
+                                        })
                                         
-                                        Text(item.album_author)
-                                            .font(.none)
-                                            .fontWeight(.bold)
-                                            .foregroundColor(.white)
-                                        
-                                    })
+                                        VStack(alignment: .leading, spacing: 5, content: {
+                                            Text(item.album_name)
+                                                .font(.title2)
+                                                .fontWeight(.heavy)
+                                                .foregroundColor(.white)
+                                            
+                                            Text(item.album_author)
+                                                .font(.none)
+                                                .fontWeight(.bold)
+                                                .foregroundColor(.white)
+                                            
+                                        })
+                                    }
+                                    .padding()
                                 }
-                                .padding()
                             }
                             .padding(.horizontal)
-
+                            .frame(height: 350)
+                            
                         }
                     }
                     
                     // max frame
-                    //.frame(height: 350) kava
+                    .frame(height: 350) //kava
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                     .padding(.top, 20)
                     
@@ -131,7 +137,7 @@ struct Home: View {
                                 .clipShape(Capsule())
                             
                         }
-                                                
+                        
                     })
                     .padding(.top, 20)
                     
@@ -163,7 +169,7 @@ struct Home: View {
                             
                         }
                     })
-//                    .padding(.horizontal)// kava soft
+                    //                    .padding(.horizontal)// kava soft
                     .padding(.top, 20)
                     
                 }
