@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90239CC263A2C9300541F01 /* SideTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90239CB263A2C9300541F01 /* SideTabView.swift */; };
 		E9FA98C726389A0B004A5B5A /* Spotify_RedesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA98C626389A0B004A5B5A /* Spotify_RedesignApp.swift */; };
 		E9FA98C926389A0B004A5B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA98C826389A0B004A5B5A /* ContentView.swift */; };
 		E9FA98CB26389A0E004A5B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FA98CA26389A0E004A5B5A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90239CB263A2C9300541F01 /* SideTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabView.swift; sourceTree = "<group>"; };
 		E9FA98C326389A0B004A5B5A /* Spotify Redesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Redesign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FA98C626389A0B004A5B5A /* Spotify_RedesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify_RedesignApp.swift; sourceTree = "<group>"; };
 		E9FA98C826389A0B004A5B5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FA98DC2638A440004A5B5A /* Home.swift */,
+				E90239CB263A2C9300541F01 /* SideTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90239CC263A2C9300541F01 /* SideTabView.swift in Sources */,
 				E9FA98D92638A1A2004A5B5A /* Song.swift in Sources */,
 				E9FA98C926389A0B004A5B5A /* ContentView.swift in Sources */,
 				E9FA98DD2638A440004A5B5A /* Home.swift in Sources */,
